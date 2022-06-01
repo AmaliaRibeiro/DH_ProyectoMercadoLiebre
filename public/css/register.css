@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*navbar*/
+
 body {
     font-family: 'Roboto', sans-serif;
     background:white;
@@ -75,7 +77,6 @@ body {
     width: 100%;
     font-size: 13px;
     border: none;
-
 }
 .burger-menu {
     background-color: #1259c3;;
@@ -117,23 +118,14 @@ body {
     margin-left: 30px;
 }
 
-.container__titular1 {
+.titular2 {
     font-size: 24px;
-    font-weight: 900;
+    font-weight: bold;
     color: #666;
     text-align: left;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 35px;
-}
-.container__titular2 {
-    font-size: 24px;
-    font-weight: 900;
-    color: #666;
-    text-align: left;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 35px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 main {
@@ -148,13 +140,8 @@ main {
    padding: 15px;
    margin-left: auto;
    margin-right: auto;
+
 }
-.bloque:hover {
-    box-shadow: 5px 5px 10px 5px black
-}
-.bloque {
-    transition: all 450ms;
-} 
 .img-producto {
      width: 100%;
      margin: auto;
@@ -182,20 +169,13 @@ main {
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;
-    transition: all 2s ease;
+    top: -15px;;
 }
-.truck:hover { 
-   transform: rotate(-90deg)
-}
-
-
 .precio__descuento {
     display: flex;
     flex-direction: row;
     padding-left: 15px;
     width: 100%;
-    margin-top: 15px;
 }
 .precio {
     font-size: 18px;
@@ -216,68 +196,126 @@ main {
 
 /*footer*/ 
 
+.footer__containertotal {
+    background-color: #ebebeb;
+}
 .footer__opciones {
-   text-align: center;
-   margin-top: 30px;
-}
-.footer__opciones:hover i  {
-    margin-bottom: 10px;
-    width: 2em;
-    color:#0022AA;
-}
+    text-align: center;
+    margin-top: 30px;
+ }
+ .footer__opciones:hover i  {
+     margin-bottom: 10px;
+     width: 2em;
+     color:#0022AA;
+ }
+ 
+ .footer__opciones i {
+     color: #1259c3;
+     transition: color 450ms;
+ }
+ .footer__opciones .opciones {
+     font-weight: 800;
+ }
+ .footer__opciones .texto {
+     font-size:15px;
+     text-align: center; 
+     font-weight: 600;
+ }
+ .final {
+     position: relative;
+     font-weight: 700;
+     text-align: left;
+    padding-top: 30px;
+    margin-left: 10px;
+ }
+/*Registro*/
 
-.footer__opciones i {
-    color: #1259c3;
-    transition: color 450ms;
-}
-.footer__opciones .opciones {
-    font-weight: 800;
-}
-.footer__opciones .texto {
-    font-size:15px;
-    text-align: center; 
-    font-weight: 600;
-}
-.final {
-    position: relative;
-    font-weight: 700;
-    text-align: left;
-   padding-top: 30px;
-   margin-left: 10px;
-}
-
-  /*Login*/
-  .create__login{
+.create__register{
     padding: 20px 40px;
     background-color: rgba(102,102,102,0.2);
-    height: 240px;
+    height: 60%;
    
   }
-  .login__subtitles {
-    font-size: 15px;
-    color: black;
-    font-weight: 600;
+  .formregister__subtitles{
+      font-size: 15px;
+      color: black;
+      font-weight: 600;
+      margin-bottom: 20px
   }
-  .buttonenviar__login:hover {
+  .control__registro {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  .button__usuario {
+      display: flex;
+      justify-content: space-around; 
+      flex-direction: row; 
+      align-items: center;
+  }    
+  
+  .register__intereses {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .control__registro input {
+    display: block;
+    
+    margin-bottom: 0;
+    border: 3px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+  button, input, select, textarea {
+      font-size: 90%;
+  }
+  .form__buttonregister {
+    margin:auto
+  }
+  button {
+      background-color: #1259c3;
+      padding: 7px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+     
+  }
+  .register__intereses input {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 20px;
+ }
+  .register__intereses label {
+    margin-top: 20px;
+  }
+  .buttonregister__enviar:hover {
     background-color: #0022AA;
     color: white;
   }
-  .buttonenviar__login {
+  .buttonregister__enviar {
     background-color: #1259c3; 
     color: #ebebeb;
     transition: all 450ms;
   }
-  /*input valid e invalid*/
-
-  .control__login input:invalid {
-    border: 2px solid black;
+  .buttonregister__borrar:hover {
+    background-color: #0022AA;
+    color: white;
   }
-  
-  .control__login input:valid {
-    border: 2px solid white;
+  .buttonregister__borrar {
+    background-color: #1259c3; 
+    color: #ebebeb;
+    transition: all 450ms;
   }
-
-@media (min-width: 361px){
+  @media (min-width: 361px){
     main section article .descripciones{
         display: block;
     }
@@ -293,16 +331,6 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-    }
-    .container__titular1 {
-        padding-top: 15px;
-        margin-bottom: 30px;
-        margin-left: 20px;
-    }
-    .container__titular2 {
-        padding-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 20px;
     }
     /*footer*/
 
@@ -321,36 +349,24 @@ main {
         margin-bottom: 10px;
         font-size: 22px;
     }
-    
-    /*login*/
+    /*register*/
 
-    button {
+    .buttonregister__enviar {
+        margin-bottom: 15px;
+    }
+    .ctrl__input {
+        margin-top: 10px;
+    }
+    .ctrl__input {
         width: 100%;
-        margin: 0;
     }
-    .control {
-        margin-top: 22px;
-        margin-bottom: 20px;
-        padding: 8px;
-        width: 100%;
-        font-size: 13px;
-        border-radius: 5px;
-    }
-    
-    .buttonenviar__login {
-        margin-top: 15px;
-        font-size: 13px;
-        padding: 8px;
-    }
-    .create__login {
-      text-align: center;
-    }
-}
-@media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
     .container__bloques {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px 5px;
+        margin-top: 30px;
         padding: 20px;
     }
     .encabezado__big {
@@ -368,23 +384,12 @@ main {
         margin: 0;
         margin-bottom: 25px;
     }
-    .container__titular1 {
-        margin-left: 40px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-    .container__titular2 {
-        margin-left: 40px;
-        margin-bottom: 20px;
-        padding-top: 15px;
-    }
     .text1 {
         max-width: none;
         font-size: 13px;
         text-align: left;
         margin-bottom: 10px;
-        padding: 0;
-       
+        padding: 0; 
     }
     .burger-menu {
         display: none;
@@ -417,22 +422,11 @@ main {
         align-items:center;
       
     }
-    .bloque-son:hover .descripciones {
-        opacity: 1;
-        color: black;
-        background-color:rgba(102 102 102 1);
-     }
-     
-    .bloque-son .descripciones {
-        opacity: 0;
-        transition: all 450ms
-    }
-    
+
     .truck {
         padding: 0px;
         margin: 0px;
     }
-
     .search {
         font-size: 15px;
         width: 190px;
@@ -462,28 +456,56 @@ main {
          font-size: 27px;
          margin-top: 0;
      }
-    
-    /*login*/
-    .control {
-        width: 70%; 
-        font-size: 15px;
-        margin-bottom: 30px;
+     
+    /*register*/
+    .create__register {
+        padding: 40px 40px;
     }
-    button {
+    .ctrl__input {
         display: block;
         margin: auto;
+        margin-bottom: 0;
+        border: 3px;
+        border-radius: 5px;
+        padding: 10px;  
         width: 70%;
+        margin-top: 20px;
     }
-    .buttonenviar__login {
-        font-size: 15px;
-        margin-bottom: 50px;
+
+    .control__form {
+        margin:auto;
+        margin: 0;
     }
-    .create__login {
-        height: 290px;
-        padding-top: 30px;
+    .buttonregister__enviar {
+        margin-top: 30px;
+    }
+    .control__registro label {
+        display: flex;
+        margin-right: 100px;
+    }
+    .register__intereses {
+       
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .button__usuario {
+       margin-left: 100px;
+       margin-right: 80px;
+    }
+    .formregister__subtitles{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+    .form__buttonregister {
+        text-align: center;
+    }
+    .ctrl__input {
+        margin-top: 15px;
     }
 }
-
 @media(min-width: 1200px) {
     
     .encabezado__main {
@@ -528,8 +550,7 @@ main {
     }
     /*footer*/
     .footer__container {
-        margin-top: 40px;
-       
+        margin-top: 20px;
     }
     .footer__opciones .opciones {
         font-size:16px;
@@ -545,31 +566,32 @@ main {
     .final {
         font-size: 12px;
     }
-    /*login*/
+    /*register*/
 
-    .control {
-        padding: 10px;
-        font-size: 16px;
-        margin-bottom: 40px;
+    .formregister__subtitles {
+        margin-left: 170px;
+        margin-right: 170px;
+        font-size: 18px;
     }
-    button {
-        padding: 10px;
+    .button__usuario {
+        margin-left: 200px;
+        margin-right: 240px;
     }
-    .create__login {
-        height: 340px;
-        padding: 50px 50px;
+    .register__intereses {
+        margin-left: 170px;
+        margin-right: 170px;
     }
-    .buttonenviar__login {
-        font-size: 16px;
-        margin-bottom: 60px;
+    .control__registro {
+        font-size: 18px;
+    }
+    .buttonregister__enviar {
+        font-size: 17px;
+    }
+    .buttonregister__borrar {
+        font-size: 17px;
+    }
+    .ctrl__input {
+        margin-top: 20px;
+        font-size: 19px;
+    }
 }
-}
-/*Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a;*/
-
-
-
-
