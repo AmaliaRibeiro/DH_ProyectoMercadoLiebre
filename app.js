@@ -1,22 +1,25 @@
 const express = require('express');
 const path = require('path'); //con este modulo se unifican las rutas para identificarlas mejor
 const app = express();
-
+//MIDDLEWARE
 app.use(express.static('public')); //se tiene la carpeta public como recurso estático para poder consumirlo
-app.use(express.urlencoded({extended:false}));
-
-app.listen(process.env.PORT || 3000, ()=>{
+app.set('puerto', process.env.PORT || 3001);
+/*app.use(express.urlencoded({extended:false}));*/
+ //RUTAS
+/*app.listen(3000, ()=>{
     console.log('Servidor activo en el puerto 3000');
-})
+})*/
 
 app.get ('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/views/home.html'));
+    res.sendFile(path.resolve(__dirname, './public/views/home.html'));
 });
 
 app.get ('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/views/register.html'));
+    res.sendFile(path.resolve(__dirname, './public/views/register.html'));
 });
 
 app.get ('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/views/login.html'));
+    res.sendFile(path.resolve(__dirname, './public/views/login.html'));
 });
+
+app.listen (app.get('puerto'), ()=> console.log(`Servidor corriendo de manera satisfactoria ${app.get('puerto')}` ));
