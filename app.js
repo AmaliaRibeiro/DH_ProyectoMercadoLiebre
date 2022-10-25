@@ -14,7 +14,7 @@ app.listen(process.env.PORT || 3001, () => {console.log("servidor corriendo en e
 })*/
 
 app.get ('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.html'));
+    res.sendFile(path.resolve(__dirname, './index.html'));
 });
 
 app.get ('/register', (req, res) => {
