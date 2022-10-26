@@ -12,30 +12,41 @@ body {
 .encabezado {
     width: 100%;
     background:#EAC926;
-    padding: 20px
+    padding: 5px;
+    height: 100px;
 }
 .encabezado__main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .logo {
     position: left top;    
-    padding: 10px;
     cursor: pointer;
-    margin-left: 10px;
-    width: 200px;
+    width: 0px;
 }
-
+.logo2 {
+   width: 60px;
+   margin-right: 3px;
+   cursor: pointer;
+}
+.hr {
+    font-size: 1px;
+    background-color: #666, transparent;
+}
 .text1 {
     text-align: center;
     font-weight: 700;
-    padding: 15px;
-
+    padding: 10px;
+    font-size: 13px;
+}
+.cart__shop {
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .navbar {
@@ -63,7 +74,7 @@ body {
     background-color: #FFF;
     padding-left: 28px;
     color: #666;
-    width: 150px;
+    width: 180px;
     height: 33px;
     padding: 4px;
     border: #ebebeb;
@@ -87,6 +98,10 @@ body {
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
+    display: none;
+}
+.burger-menu1 {
+    margin-left: 10px;
 }
 
 /*Fin del navbar*/
@@ -288,6 +303,7 @@ main {
     .text1 {
         font-size: 16px;
     }
+    
     .contenedor__logoBuscador{
         display: flex;
         flex-wrap: wrap;
@@ -368,6 +384,9 @@ main {
         margin: 0;
         margin-bottom: 25px;
     }
+    .encabezado {
+        height: 150px
+    }
     .container__titular1 {
         margin-left: 40px;
         margin-bottom: 20px;
@@ -389,9 +408,13 @@ main {
     .burger-menu {
         display: none;
     }
+    .burger-menu1 {
+        display: none;
+    }
     .navbar {
         display: flex;
         justify-content:space-between;
+        
     }
     .navbar ul {
         display: flex;
@@ -403,8 +426,15 @@ main {
     }
     .logo {
         width: 250px;
-      
+        margin-left: 10px;
+        padding: 10px;
     }
+    .logo2 {
+        width: 0px;
+     }
+     .cart__shop{
+        display: none;
+     }
     .img-producto{
         display: flex;
        
@@ -491,8 +521,10 @@ main {
     
     .encabezado__main {
         align-items: center;
-        width: 650px;
       justify-content: left;
+    }
+    .encabezado {
+        height: 180px
     }
     .logo{
         width: 310px;
