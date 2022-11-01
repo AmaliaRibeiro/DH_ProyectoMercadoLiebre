@@ -18,9 +18,8 @@ body {
 .encabezado__main {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -146,13 +145,13 @@ body {
 }
 
 .container__titular1 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
     color: #666;
     text-align: left;
     padding-top: 20px;
     margin-bottom: 20px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 .container__titular2 {
     font-size: 24px;
@@ -167,6 +166,9 @@ body {
 main {
     background: #ebebeb ;
 }
+main section article {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
 
 .bloque {
    display: flex;
@@ -176,6 +178,7 @@ main {
    padding: 15px;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 10px;
 }
 .bloque:hover {
     box-shadow: 5px 5px 10px 5px black
@@ -375,6 +378,36 @@ main {
       text-align: center;
     }
 }
+@media (min-width: 613px) {
+    .encabezado__main {
+    justify-content: center;
+    }
+    .search {
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+    }
+    .slider-container  {
+        height: 300px;
+    }
+    .bloque {
+        width: 90%;
+    }
+    .container__bloques {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 5px;
+        padding: 20px;
+    }
+    .container__titular1 {
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    .container__titular2 {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    }
+}
 @media (min-width: 768px) {
     .container__bloques {
         display: grid;
@@ -393,7 +426,7 @@ main {
         display: flex;   
         align-items: center;
         justify-content: flex-start;
-        width: 64%;
+       
         margin: 0;
         margin-bottom: 18px;
     }
@@ -550,6 +583,9 @@ main {
     .encabezado {
         height: 150px
     }
+    .encabezado__big {
+        justify-content: space-around;
+    }
     .logo{
         width: 250px;
     }
@@ -589,6 +625,12 @@ main {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px 5px;
     }
+    .container__titular1 {
+    font-size: 30px;
+    }
+    .container__titular2 {
+        font-size: 30px;
+        }
     /*footer*/
     .footer__container {
         margin-top: 40px;
