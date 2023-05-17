@@ -14,7 +14,7 @@ body {
 .encabezado {
     width: 100%;
     background:#EAC926;
-    padding: 20px
+    padding: 13px
 }
 .encabezado__main {
     display: flex;
@@ -510,11 +510,12 @@ main {
     
     .encabezado__main {
         align-items: center;
-        width: 650px;
       justify-content: left;
+      margin-bottom: 25px;
+      justify-content: space-around;
     }
     .logo{
-        width: 310px;
+        width: 250px;
     }
 
     .text1 {
@@ -541,7 +542,9 @@ main {
     }
     .search {
         font-size: 17px;
-        width: 330px;
+        width: 450px;
+        height: 40px;
+        margin-left: 130px;
     }
     .container__bloques {
         display: grid;
